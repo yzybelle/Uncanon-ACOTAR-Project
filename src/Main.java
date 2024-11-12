@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
      Canon canon = new Canon();
      Trials trials = new Trials();
+     Feyre feyre = new Feyre();
 
 
         System.out.println("Welcome to Uncanon ACOTAR!\n" +
@@ -70,6 +71,7 @@ public class Main {
         }
 
         if(trials.trialOne()){
+            feyre.addkarma();
             canon.plot1();
         }
         else{

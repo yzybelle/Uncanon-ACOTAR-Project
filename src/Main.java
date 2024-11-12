@@ -8,7 +8,7 @@ public class Main {
                 "not much more of a use. A few years back, his leg had been broken" +
                 "by loan collectors that didn't care about the three pairs of young eyes watching their father get beat." +
                 "Feyre always blamed him for making a stupid investment that costed all their money, and she only felt" +
-                "a tinge of pity for the man " +
-                "It was all up to her, and although she never outwardly said it, she wanted a life better than poverty");
+                "a tinge of pity for the man that took her and her sibling's livelihood away." +
+                "It was all up to her, and although she never outwardly said it, she wanted a life better than poverty.");
     }
 }

@@ -10,7 +10,7 @@ public class Main {
                 "This is a choose your own adventure game based off the hit book series \"A Court of Thorns and Roses\"\n" +
                 "All code belong to Ysabelle Ramirez\n" +
                 "_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n" +
-                "Feyre despised being the sole provider for her family. Her sisters, wrapped up in their own sense of entitlement, refused to lift a finger to help, and her father—despite his weak attempts—was all but useless.\n" +
+                "Feyre desvpised being the sole provider for her family. Her sisters, wrapped up in their own sense of entitlement, refused to lift a finger to help, and her father—despite his weak attempts—was all but useless.\n" +
                 "Years ago, his leg had been shattered by the ruthless loan collectors, but it was the reckless investment he’d made, one that had drained their savings and led to their downfall, that truly condemned them." +
                 "\n" +
                 "Feyre couldn't forgive him for it. The man who had once been a proud merchant had not only squandered their money but also broken the fragile safety they once had.\n" +

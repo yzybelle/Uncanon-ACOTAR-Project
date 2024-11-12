@@ -26,7 +26,8 @@ public class Main {
                 "when she spotted a larger, darker figure looming behind the deer. A wolf. But not a normal wolf. It's coat was shiny, shimmering almost,\n" +
                 "encapsulating a size so large and unnatural that it couldn't have been anything other than a Faerie. But Faerie hadn't crossed the border in decades.\n" +
                 "How could it have been here? But it didn't matter to Feyre. She hated them. They were violent and killed so many humans in the Great War\n" +
-                "it was only reasonable to kill it.");
+                "it was only reasonable to kill it. It's eyes were set on the deer. The poor innocent deer. Feyre couldn't let it get her family's dinner.\n" +
+                "A moment later, it lunged for the deer's neck.");
         System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________");
 
         System.out.println("Welcome to your first trial. You are expected to answer four questions carefully.\n" +
@@ -69,7 +70,7 @@ public class Main {
         }
 
         if(trials.trialOne()){
-            System.out.println("Yay");
+            canon.plot1();
         }
         else{
             System.out.println("bye!");

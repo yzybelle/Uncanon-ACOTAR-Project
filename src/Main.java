@@ -130,11 +130,43 @@ public class Main {
         int trialTew = trials.trialTwo(number,emo);
         //Greater than 0 means YES!!!!!!! SHE LIVES!!!
         if(trialTew>=0){
-            System.out.println("hello");
+            System.out.println("Feyre loosened her grip on the dagger and stared into the green eyes before asking, “When do we go?” She could smell her doom on his breath as he replied, “Now.”\n" +
+                    "\n" +
+                    "“The venison should last two weeks,” Feyre said to her father as she bundled up against the cold. “Start on the fresh meat, then the jerky. You know how to make it.”\n" +
+                    "“Feyre—” her father breathed, but she kept going.\n" +
+                    "“I left the money on the dresser,” she added. “It’ll last if you’re careful.”\n" +
+                    "\n" +
+                    "She looked at her father for a moment, memorizing his face. Her eyes stung, but she blinked the tears away. “When spring comes, hunt by Silverspring Creek. Ask Isaac Hale about snares—I taught him last year.”\n" +
+                    "\n" +
+                    "Her father nodded, his hand over his mouth. The beast’s growl came from outside. Feyre glanced at her sisters, huddled by the fire, still too scared to move.\n" +
+                    "Elain mouthed her name, but Feyre turned to Nesta, whose cold gaze mirrored their mother’s.\n" +
+                    "“Don’t marry Tomas Mandray,” Feyre said quietly. “His father beats his wife, and none of his sons stop him. Bruises are harder to hide than poverty.”\n" +
+                    "Nesta’s eyes widened, but she said nothing.\n" +
+                    "\n" +
+                    "Feyre turned to leave, but her father’s hand gripped her arm. Outside, the beast snarled.\n" +
+                    "“Feyre,” he said, his voice cracking. He squeezed her hands, his eyes clear for the first time in years. “You were always too good for this place, for us. If you ever escape, don’t come back.”\n" +
+                    "Feyre’s heart twisted, but she nodded.\n" +
+                    "“Go somewhere new,” her father whispered, shaking her by the shoulders. “Make a name for yourself.”");
         }
         else{
-            System.out.println("hello");
+            System.out.println("Feyre loosened her grip on the dagger, her voice steady despite the fear. “I’d rather die than go with you.”\n" +
+                    "\n" +
+                    "The faerie’s eyes darkened, but he didn’t move to strike. Instead, he watched  her for a long moment, something unspoken passing between them. He understood her defiance—he understood why she’d rather die than submit. But he wouldn’t let her die.\n" +
+                    "\n" +
+                    "“So be it,” he said, his voice low. He stepped forward, his hand locking onto her arm with unyielding strength. Feyre tried to pull away, but his grip was like iron.\n" +
+                    "\n" +
+                    "“You’re coming with me,” he said, voice soft but final.\n" +
+                    "\n" +
+                    "She glanced back at her father and sisters, their faces pale and tear-stricken. She wanted to stay—to die here with them—but she knew it was pointless. He wasn’t going to kill her. Not yet.\n" +
+                    "\n" +
+                    "Her heart twisted as the faerie dragged her toward the door, out into the cold night. “You’ll come with me, Feyre,” he repeated. “There’s no other way.”\n" +
+                    "\n" +
+                    "Feyre’s gaze met his for a brief moment, and in that fleeting glance, she saw something—a flicker of understanding, maybe even pity. But it was gone in an instant.\n" +
+                    "\n" +
+                    "And as the faerie pulled her into the darkness, Feyre knew her fate was sealed. She would live, but not here. Not in her world.");
+            System.out.println();
         }
+        System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________");
 
 
 

@@ -221,7 +221,7 @@ public class Main {
 
         }
         if(direction.equalsIgnoreCase("s")){
-
+            System.out.println("The closer they get to the border, the more drowsy Feyre felt. ");
         }
         if(direction.equalsIgnoreCase("e")){
 

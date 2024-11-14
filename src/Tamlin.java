@@ -24,4 +24,11 @@ public class Tamlin {
         return love;
     }
 
+    public int getAnger() {
+        return anger;
+    }
+
+    public int getLove() {
+        return love;
+    }
 }

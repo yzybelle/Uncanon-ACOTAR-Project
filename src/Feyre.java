@@ -6,42 +6,18 @@ public class Feyre {
     }
 
     public int addkarma() {
+
         karma++;
         return karma;
     }
 
     public int minuskarma() {
+
         karma--;
         return karma;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public int getKarma() {
+        return karma;
+    }
 }

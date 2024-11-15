@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -5,8 +6,13 @@ public class Main {
 
      Trials trials = new Trials();
      Feyre feyre = new Feyre();
+     Tamlin tamlin = new Tamlin();
 
+     String stats = ("_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n" +
+             "Feyre\n\uD83D\uDC4D Karma: "+ feyre.getKarma()+"\n\n"+"_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n"
+              + "Tamlin\n\uD83D\uDC4E Anger: "+ tamlin.getAnger()+"\n\uD83E\uDEC0 Love: "+tamlin.getLove()+"\n\n_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n");
 
+        System.out.println(stats);
 //INTRODUCE NESTA AND ELAIN
         System.out.println("Welcome to Uncanon ACOTAR!\n" +
                 "This is a choose your own adventure game based off the hit book series \"A Court of Thorns and Roses\"\n" +
@@ -93,9 +99,7 @@ public class Main {
 
         if(trials.trialOne()){
             feyre.addkarma();
-            System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n");
-            System.out.println("Feyre\nKarma: "+ feyre.getKarma()+"\n");
-            System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n");
+            System.out.println(stats);
             System.out.println("\nShe fired the ash arrow before it destroyed much else of the deer. The arrow found its mark in it's side, and she could have sworn the ground itself shuddered.\n\n" +
                     "It barked in pain, releasing the doe’s neck as it's blood sprayed on the snow—so ruby bright. It whirled towards her, those yellow eyes wide, hackles raised.\n\n" +
                     "It's low growl reverberated in the empty pit of her stomach as she surged to her feet, snow churning around her, another arrow drawn.\n" +
@@ -107,10 +111,7 @@ public class Main {
         else{
 
             feyre.minuskarma();
-            System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n");
-            System.out.println("Feyre\nKarma: "+ feyre.getKarma()+"\n");
-            System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n");
-
+            System.out.println(stats);
             System.out.println("She fired the ash arrow before it destroyed much else of the deer. The arrow grazed it's ears, dealing no damage and directing it's attention to her.\n\n" +
                     "The deer ran off quickly, leaving nothing but her and that...wolf. It's yellow eyes pierced through her as she grabbed her bow,\n\n" +
                     "hopping off the tree and running towards the denser parts of the forest. But she wasn't as fast as she thought. She heard it's four paws hitting the snow,\n\n" +
@@ -141,6 +142,8 @@ public class Main {
                 "Prythian must claim your life in some way, for the life you took from it. So as a representative of the immortal realm, I can either gut you like swine, or … you can cross the wall and live out the remainder of your days in Prythian.”\n\n" +
                 "Feyre blinked. “What?”\n\n" +
                 "He said slowly, as if Feyre were indeed as stupid as a swine, “You can either die tonight or offer your life to Prythian by living in it forever, forsaking the human realm.”");
+                 tamlin.addAnger();
+                 System.out.println(stats);
 
         System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________");
         System.out.println("Normally, I'd give you the choice to choose. But now, you must leave the future to fate.\n Will you go with the beast? Or will you be banished to the Faerie land of Prythian?");
@@ -153,6 +156,9 @@ public class Main {
         int trialTew = trials.trialTwo(number,emo);
         //Greater than 0 means YES!!!!!!! SHE LIVES!!!
         if(trialTew>=0){
+            feyre.addkarma();
+            tamlin.addLove();
+            System.out.println(stats);
             System.out.println("Feyre loosened her grip on the dagger and stared into the green eyes before asking, “When do we go?” She could smell her doom on his breath as he replied, “Now.”\n" +
                     "\n" +
                     "“The venison should last two weeks,” Feyre said to her father as she bundled up against the cold. “Start on the fresh meat, then the jerky. You know how to make it.”\n\n" +
@@ -172,6 +178,10 @@ public class Main {
                     "“Go somewhere new,” her father whispered, shaking her by the shoulders. “Make a name for yourself.”");
         }
         else{
+            feyre.addkarma();
+            tamlin.addLove();
+            tamlin.addLove();
+            System.out.println(stats);
             System.out.println("Feyre loosened her grip on the dagger, her voice steady despite the fear. “I’d rather die than go with you.”\n" +
                     "\n" +
                     "The faerie’s eyes darkened, but he didn’t move to strike. Instead, he watched  her for a long moment, something unspoken passing between them. He understood her defiance—he understood why she’d rather die than submit. But he wouldn’t let her die.\n" +
@@ -191,21 +201,18 @@ public class Main {
         }
         System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________");
         System.out.println("TRIAL THREE: FEYRE'S JOURNEY");
-        System.out.println("Okay, okay... I know you're sick and tired of the reading. What's with this new gen and their short attention span? Have people even read the Feminine Mystique??\n" +
-                "(The narrator has never read a book. He is a program. He just has a superiority complex.");
-        System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________");
-
-        System.out.println("\"My name... is Tamlin\" the beast grunts.\n\n" +
-                "Feyre doesn't respond. Why would she care what her captor's name is?\n\n" +
-                "\"If you think I'm a monster, I'm not. Even you know I can't bypass the treaty. A life for a life\"\n\n" +
-                "\"What treaty?\" she whispers.\"\n\n" +
-                "\"You're too young to remember\"\n\n" +
+        System.out.println("Okay, okay... I know you're sick and tired of the reading. What's with this new gen and their short attention span? Have people even read *The Feminine Mystique*??\n" +
+                "(The narrator has never read a book. He is a program. He just has a superiority complex.)\n\n" +
+                "\"My name... is Tamlin,\" the beast grunts.\n" +
+                "Feyre doesn't respond. Why would she care what her captor's name is?\n" +
+                "\"If you think I'm a monster, I'm not. Even you know I can't bypass the treaty. A life for a life.\"\n" +
+                "\"What treaty?\" she whispers.\n" +
+                "\"You're too young to remember.\"\n\n" +
                 "\"Oh yeah? And how old are you?\"\n\n" +
                 "\"Over 500 years old,\"\n\n" +
                 "If he could live that long, Feyre thought that her punishment would truly last a lifetime. Once she crosses those borders, there would be no way back.\n\n" +
-                "This would be her only chance to escape.\n\n");
-
-        System.out.println("The beast throws Feyre on his back and start running towards the Prythian border. Try your best not to get hit unless you want to deal damage to the Beast.\nThis will have consequence.\n\n" +
+                "This would be her only chance to escape.\n\n_________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+        System.out.println("\n\nHe throws Feyre on his back and start running towards the Prythian border. Try your best not to anger him.\nThis will have consequence.\n\n_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n" +
                 "Straight north heads towards Prythian, however you notice that the closer you get to the border, the sleepier you get. Is this a spell? If it can place magic on you, wouldn't escaping be futile?\n\n" +
                 "West heads towards the forest. The trees seem far too dense for the beast to fit. Maybe this is your chance to escape....\n\n" +
                 "East heads towards the town. What are you thinking? If the village sees you with a faerie, you'll both be dead. However.. there is a faerie-killing mercenary there. Maybe she can help.\n\n" +
@@ -218,15 +225,32 @@ public class Main {
         String direction = trialThreeQuest.nextLine();
 
         if(direction.equalsIgnoreCase("n")){
-
+            System.out.println("Feyre’s pulse quickened as she saw the border approaching. She couldn’t let the Beast drag her over—she had to escape. Her mind raced as she realized there was no way to control him, so she had to outsmart him. The moment the Beast slowed to navigate a rocky path, Feyre tried to leap off his back, hoping to break free before he noticed.\n" +
+                    "\n" +
+                    "But as soon as her feet hit the ground, the Beast’s claws scraped across the dirt, and his massive form twisted to pull her back with an almost predatory speed. Feyre scrambled, trying to sprint for the trees, but her legs were heavy with exhaustion, and the Beast’s roar sent a jolt of fear through her. He lunged forward, faster than she could run, and within seconds, he was back on the path to the border.\n" +
+                    "\n" +
+                    "The world blurred as the magic pulled at her, and the Beast crossed the line effortlessly. Feyre’s heart sank. She was in Prythian now, her brief attempt at freedom crushed.");
         }
         if(direction.equalsIgnoreCase("s")){
-            System.out.println("The closer they ghet to the border, the more drowsy Feyre felt. ");
+            System.out.println("Feyre’s mind raced as she caught sight of the path home, a glimmer of hope in the distance. She knew the Beast couldn’t follow her easily if she could just get away. As soon as they hit a patch of uneven ground, she twisted violently, swinging her leg over and attempting to jump off his back. She landed with a harsh thud on the ground, but before she could make it more than a few steps, the Beast’s claws raked across the dirt, pulling her back with terrifying force.\n" +
+                    "\n" +
+                    "Feyre cried out, but her arms were trapped by the Beast’s claws as he dragged her back toward him. She fought, kicking at his paws, trying to break free, but his grip was iron-strong. The moment her hands slipped from his fur, she was pulled back onto his back with ease. The Beast surged forward again, crossing the border as if nothing had happened.\n" +
+                    "\n" +
+                    "Feyre’s chest tightened as she realized it was over. She had failed to escape, and the border of Prythian stretched out before her.");
         }
         if(direction.equalsIgnoreCase("e")){
-
+            System.out.println("The village in the distance looked like salvation, but Feyre knew the villagers would never help her if they saw her with the Beast. She needed to get away before they noticed her—before she became their target. As the Beast moved, Feyre saw a brief opening, a gap in the way he was moving. She gathered her courage and made a desperate dash to the side, attempting to dart into the trees just beyond the road.\n" +
+                    "\n" +
+                    "But the Beast’s reaction was instant. With a roar, he surged to the side, knocking her off balance, and before Feyre could recover, she was back on his back, his claws digging into her. She struggled beneath him, her mind racing with the knowledge that she couldn’t outrun him. The village—her last hope—was slipping farther away as the Beast pushed forward.\n" +
+                    "\n" +
+                    "No matter how hard she fought, the border was ahead, and Feyre found herself crossing it with the Beast, unable to stop it. Her stomach turned as she realized it was hopeless. Prythian was now her fate.");
         }
         if(direction.equalsIgnoreCase("w")){
+            System.out.println("The thick trees of the forest loomed ahead, a potential hiding place that could offer a chance at freedom. Feyre’s heart pounded as she saw the opening—if she could just slip off his back when the Beast slowed, she could make a run for it. With all the strength she could muster, she wrenched herself sideways and jumped off, hoping to lose herself in the shadows of the forest.\n" +
+                    "\n" +
+                    "But the Beast was quicker than she anticipated. He twisted mid-gallop, his claws scratching the earth as he reached out to grab her, pulling her back with alarming speed. Feyre’s body crashed against his, and before she could even recover, the Beast was already surging forward again, moving past the trees and towards the border.\n" +
+                    "\n" +
+                    "The moment they crossed, Feyre felt the weight of magic pressing on her. She was trapped in Prythian, and there was no escaping.");
 
         }
 

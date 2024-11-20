@@ -407,7 +407,9 @@ public class Main {
                     " As the curse lingers, so does the distance between them. As the curse continues to bind Tamlin, he becomes more withdrawn and cold. He no longer seeks her presence, and when they do speak, his tone is distant, as though the warmth they once shared has disappeared.\n" +
                     "Feyre lives on till the age of 40, suffering a death that could've been avoided had Tamlin loved her enough to save her.");
         }
-        else if ()
+        else{
+            System.out.println("");
+        }
 
 
 

@@ -402,7 +402,7 @@ public class Main {
 
 
         if (tamlin.getAnger()>6){
-            System.out.println("Yikes, things arent looking good for Feyre and Tamlin. How did you manage to get him that angry?\n" + GREEN + "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET +
+            System.out.println( "Yikes, things arent looking good for Feyre and Tamlin. How did you manage to get him that angry?\n" + GREEN + "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET +
                     "\nYour Ending: Feyre has made a series of choices that pushed Tamlin away. Whether it was her refusal to help him break the curse, her emotional distance, or her inability to trust him when it mattered most, Tamlin’s feelings have begun to change.\n" +
                     " As the curse lingers, so does the distance between them. As the curse continues to bind Tamlin, he becomes more withdrawn and cold. He no longer seeks her presence, and when they do speak, his tone is distant, as though the warmth they once shared has disappeared.\n" +
                     "Feyre lives on till the age of 40, suffering a death that could've been avoided had Tamlin loved her enough to save her.");

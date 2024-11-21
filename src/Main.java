@@ -12,11 +12,6 @@ public class Main {
      String RESET = "\u001B[0m";
      String GREEN = "\u001B[32m";
 
-     String stats = (GREEN +   "_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n" + RESET +
-             "Feyre\n\uD83D\uDC4D Karma: "+ feyre.getKarma()+"\n\n"+ GREEN+ "_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n"
-              + RESET + "Tamlin\n\uD83D\uDD25 Anger: " + tamlin.getAnger()+"\n\uD83E\uDEC0 Love: "+tamlin.getLove()+ GREEN+  "\n\n_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n" + RESET);
-
-//INTRODUCE NESTA AND ELAIN
         System.out.println("Welcome to Uncanon ACOTAR!\n" +
                 "This is a choose your own adventure game based off the hit book series \"A Court of Thorns and Roses\"\n" +
                 "All code belong to Ysabelle Ramirez\n" + GREEN +
@@ -80,7 +75,7 @@ public class Main {
 
         if(trials.trialOne()){
             feyre.addkarma();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
             System.out.println("\nShe fired the ash arrow before it destroyed much else of the deer. The arrow found its mark in it's side, and she could have sworn the ground itself shuddered.\n\n" +
                     "It barked in pain, releasing the doe’s neck as it's blood sprayed on the snow—so ruby bright. It whirled towards her, those yellow eyes wide, hackles raised.\n\n" +
                     "It's low growl reverberated in the empty pit of her stomach as she surged to her feet, snow churning around her, another arrow drawn.\n" +
@@ -92,7 +87,7 @@ public class Main {
         else{
 
             feyre.minuskarma();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
             System.out.println("She fired the ash arrow before it destroyed much else of the deer. The arrow grazed it's ears, dealing no damage and directing it's attention to her.\n\n" +
                     "The deer ran off quickly, leaving nothing but her and that...wolf. It's yellow eyes pierced through her as she grabbed her bow,\n\n" +
                     "hopping off the tree and running towards the denser parts of the forest. But she wasn't as fast as she thought. She heard it's four paws hitting the snow,\n\n" +
@@ -105,9 +100,9 @@ public class Main {
         System.out.println(GREEN+  "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET);
         System.out.println("Trial Two: Feyre meets the Beast\n");
         System.out.println("Later, after another dinner of venison, when Feyre and her family were all gathered around the fire for the quiet hour before bed, she watched her sisters whispering and laughing together.\n\n" +
-                "They’d spent every copper Feyre had given them—on what, she didn’t know, though Elain had brought back a new chisel for their father’s wood carving. The cloak and boots they’d whined about the night before had been too expensive.\n\n" +
-                "But Feyre hadn’t scolded them for it, not when Nesta went out a second time to chop more wood without asking Feyre. Her father was dozing in his chair, his cane laid across his gnarled knee.\n\n" +
-                "As good a time as any to broach the subject of saving money with Nesta. Feyre turned to her, opening her mouth. But there was a roar that half deafened Feyre, and her sisters screamed as snow burst into the room and an enormous, \n\n" +
+                "They’d spent every copper Feyre had given them—on what, she didn’t know, though Elain had brought back a new chisel for their father’s wood carving. \n\nThe cloak and boots they’d whined about the night before had been too expensive." +
+                "But Feyre hadn’t scolded them for it, not when Nesta went out a second time to chop more wood without asking Feyre. \n\nHer father was dozing in his chair, his cane laid across his gnarled knee." +
+                "As good a time as any to broach the subject of saving money with Nesta. Feyre turned to her, opening her mouth. \n\nBut there was a roar that half deafened Feyre, and her sisters screamed as snow burst into the room and an enormous, " +
                 "growling shape appeared in the doorway.\n\n" +
                 "“MURDERERS!” the beast roared again, hackles raised.\n\n" +
                 "“P-please,” their father babbled from behind Feyre, failing to find it in himself to come to her side.\n\n" +
@@ -124,7 +119,7 @@ public class Main {
                 "Feyre blinked. “What?”\n\n" +
                 "He said slowly, as if Feyre were indeed as stupid as a swine, “You can either die tonight or offer your life to Prythian by living in it forever, forsaking the human realm.”");
                  tamlin.addAnger();
-                 System.out.println(stats);
+        printStats(feyre, tamlin);
 
         System.out.println(GREEN+ "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET);
         System.out.println("You must leave the future to fate.\n Will you go with the beast? Or will you be banished to the Faerie land of Prythian?");
@@ -139,16 +134,16 @@ public class Main {
         if(trialTew>=0){
             feyre.addkarma();
             tamlin.addLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
             System.out.println("Feyre loosened her grip on the dagger and stared into the green eyes before asking, “When do we go?” She could smell her doom on his breath as he replied, “Now.”\n" +
                     "\n" +
                     "“The venison should last two weeks,” Feyre said to her father as she bundled up against the cold. “Start on the fresh meat, then the jerky. You know how to make it.”\n\n" +
                     "“Feyre—” her father breathed, but she kept going.\n\n" +
                     "“I left the money on the dresser,” she added. “It’ll last if you’re careful.”\n" +
                     "\n" +
-                    "She looked at her father for a moment, memorizing his face. Her eyes stung, but she blinked the tears away. “When spring comes, hunt by Silverspring Creek. Ask Isaac Hale about snares—I taught him last year.”\n" +
+                    "She looked at her father for a moment, memorizing his face. Her eyes stung, but she blinked the tears away. “When spring comes, hunt by Silverspring Creek. \nAsk Isaac Hale about snares—I taught him last year.”" +
                     "\n" +
-                    "Her father nodded, his hand over his mouth. The beast’s growl came from outside. Feyre glanced at her sisters, huddled by the fire, still too scared to move.\n\n" +
+                    "Her father nodded, his hand over his mouth. The beast’s growl came from outside. \n\nFeyre glanced at her sisters, huddled by the fire, still too scared to move." +
                     "Elain mouthed her name, but Feyre turned to Nesta, whose cold gaze mirrored their mother’s.\n\n" +
                     "“Don’t marry Tomas Mandray,” Feyre said quietly. “His father beats his wife, and none of his sons stop him. Bruises are harder to hide than poverty.”\n\n" +
                     "Nesta’s eyes widened, but she said nothing.\n" +
@@ -162,10 +157,11 @@ public class Main {
             feyre.addkarma();
             tamlin.addLove();
             tamlin.addLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
             System.out.println("Feyre loosened her grip on the dagger, her voice steady despite the fear. “I’d rather die than go with you.”\n" +
                     "\n" +
-                    "The faerie’s eyes darkened, but he didn’t move to strike. Instead, he watched  her for a long moment, something unspoken passing between them. He understood her defiance—he understood why she’d rather die than submit. But he wouldn’t let her die.\n" +
+                    "The faerie’s eyes darkened, but he didn’t move to strike. Instead, he watched  her for a long moment, something unspoken passing between them." +
+                    "\nHe understood her defiance—he understood why she’d rather die than submit. But he wouldn’t let her die." +
                     "\n" +
                     "“So be it,” he said, his voice low. He stepped forward, his hand locking onto her arm with unyielding strength. Feyre tried to pull away, but his grip was like iron.\n" +
                     "\n" +
@@ -204,53 +200,68 @@ public class Main {
         Scanner trialThreeQuest = new Scanner(System.in);
         System.out.println("Choose which direction you want to go in: Input n for north, s for south, e for east, and w for west");
         String direction = trialThreeQuest.nextLine();
+        while (!direction.equals("n") && !direction.equals("s") && !direction.equals("e") && !direction.equals("w")){
+            System.out.println("Choose which direction you want to go in: Input n for north, s for south, e for east, and w for west");
+            direction = trialThreeQuest.nextLine();
+
+        }
 
         if(direction.equalsIgnoreCase("n")){
-            System.out.println("Feyre’s pulse quickened as she saw the border approaching. She couldn’t let the Beast drag her over—she had to escape. Her mind raced as she realized there was no way to control him, so she had to outsmart him. The moment the Beast slowed to navigate a rocky path, Feyre tried to leap off his back, hoping to break free before he noticed.\n" +
+            System.out.println("Feyre’s pulse quickened as she saw the border approaching. She couldn’t let the Beast drag her over—she had to escape. Her mind raced as she realized there was no way to control him,\n" +
+                    " so she had to outsmart him. The moment the Beast slowed to navigate a rocky path, Feyre tried to leap off his back, hoping to break free before he noticed.\n" +
                     "\n" +
-                    "But as soon as her feet hit the ground, the Beast’s claws scraped across the dirt, and his massive form twisted to pull her back with an almost predatory speed. Feyre scrambled, trying to sprint for the trees, but her legs were heavy with exhaustion, and the Beast’s roar sent a jolt of fear through her. He lunged forward, faster than she could run, and within seconds, he was back on the path to the border.\n" +
+                    "But as soon as her feet hit the ground, the Beast’s claws scraped across the dirt, and his massive form twisted to pull her back with an almost predatory speed. " +
+                    "\nFeyre scrambled, trying to sprint for the trees, but her legs were heavy with exhaustion, and the Beast’s roar sent a jolt of fear through her. " +
+                    "\nHe lunged forward, faster than she could run, and within seconds, he was back on the path to the border.\n" +
                     "\n" +
                     "The world blurred as the magic pulled at her, and the Beast crossed the line effortlessly. Feyre’s heart sank. She was in Prythian now, her brief attempt at freedom crushed.");
                      feyre.addkarma();
                      tamlin.addAnger();
-                     System.out.println(stats);
+            printStats(feyre, tamlin);
         }
         if(direction.equalsIgnoreCase("s")){
-            System.out.println("Feyre’s mind raced as she caught sight of the path home, a glimmer of hope in the distance. She knew the Beast couldn’t follow her easily if she could just get away. As soon as they hit a patch of uneven ground, she twisted violently, swinging her leg over and attempting to jump off his back. She landed with a harsh thud on the ground, but before she could make it more than a few steps, the Beast’s claws raked across the dirt, pulling her back with terrifying force.\n" +
+            System.out.println("Feyre’s mind raced as she caught sight of the path home, a glimmer of hope in the distance. She knew the Beast couldn’t follow her easily if she could just get away. " +
+                    "\nAs soon as they hit a patch of uneven ground, she twisted violently, swinging her leg over and attempting to jump off his back. She landed with a harsh thud on the ground, but before she could make it more " +
+                    "\nthan a few steps, the Beast’s claws raked across the dirt, pulling her back with terrifying force." +
                     "\n" +
-                    "Feyre cried out, but her arms were trapped by the Beast’s claws as he dragged her back toward him. She fought, kicking at his paws, trying to break free, but his grip was iron-strong. The moment her hands slipped from his fur, she was pulled back onto his back with ease. The Beast surged forward again, crossing the border as if nothing had happened.\n" +
+                    "Feyre cried out, but her arms were trapped by the Beast’s claws as he dragged her back toward him. She fought, kicking at his paws, trying to break free, but his grip was iron-strong. " +
+                    "\nThe moment her hands slipped from his fur, she was pulled back onto his back with ease. The Beast surged forward again, crossing the border as if nothing had happened." +
                     "\n" +
                     "Feyre’s chest tightened as she realized it was over. She had failed to escape, and the border of Prythian stretched out before her.");
             feyre.addkarma();
             tamlin.addAnger();
-                    System.out.println(stats);
+            printStats(feyre, tamlin);
         }
         if(direction.equalsIgnoreCase("e")){
-            System.out.println("The village in the distance looked like salvation, but Feyre knew the villagers would never help her if they saw her with the Beast. She needed to get away before they noticed her—before she became their target. As the Beast moved, Feyre saw a brief opening, a gap in the way he was moving. She gathered her courage and made a desperate dash to the side, attempting to dart into the trees just beyond the road.\n" +
-                    "\n" +
-                    "But the Beast’s reaction was instant. With a roar, he surged to the side, knocking her off balance, and before Feyre could recover, she was back on his back, his claws digging into her. She struggled beneath him, her mind racing with the knowledge that she couldn’t outrun him. The village—her last hope—was slipping farther away as the Beast pushed forward.\n" +
+            System.out.println("The village in the distance looked like salvation, but Feyre knew the villagers would never help her if they saw her with the Beast. She needed to get away before they " +
+                    "\nnoticed her—before she became their target. As the Beast moved, Feyre saw a brief opening, a gap in the way he was moving. She gathered her courage and made a desperate dash to the side, " +
+                    "\nattempting to dart into the trees just beyond the road. But the Beast’s reaction was instant. With a roar, he surged to the side, knocking her off balance, and before Feyre could recover, " +
+                    "\nshe was back on his back, his claws digging into her. She struggled beneath him, her mind racing with the knowledge that she couldn’t outrun him. The village—her last hope—was slipping farther away as the Beast pushed forward.\n" +
                     "\n" +
                     "No matter how hard she fought, the border was ahead, and Feyre found herself crossing it with the Beast, unable to stop it. Her stomach turned as she realized it was hopeless. Prythian was now her fate.");
             feyre.addkarma();
             tamlin.addAnger();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
 
         }
         if(direction.equalsIgnoreCase("w")){
-            System.out.println("The thick trees of the forest loomed ahead, a potential hiding place that could offer a chance at freedom. Feyre’s heart pounded as she saw the opening—if she could just slip off his back when the Beast slowed, she could make a run for it. With all the strength she could muster, she wrenched herself sideways and jumped off, hoping to lose herself in the shadows of the forest.\n" +
-                    "\n" +
-                    "But the Beast was quicker than she anticipated. He twisted mid-gallop, his claws scratching the earth as he reached out to grab her, pulling her back with alarming speed. Feyre’s body crashed against his, and before she could even recover, the Beast was already surging forward again, moving past the trees and towards the border.\n" +
+            System.out.println("The thick trees of the forest loomed ahead, a potential hiding place that could offer a chance at freedom. Feyre’s heart pounded as she saw the opening—if she could just slip off his back " +
+                    "\nwhen the Beast slowed, she could make a run for it. With all the strength she could muster, she wrenched herself sideways and jumped off, hoping to lose herself in the shadows of the forest. " +
+                    "\nBut the Beast was quicker than she anticipated. He twisted mid-gallop, his claws scratching the earth as he reached out to grab her, pulling her back with alarming speed. Feyre’s body crashed against his, " +
+                    "\nand before she could even recover, the Beast was already surging forward again, moving past the trees and towards the border." +
                     "\n" +
                     "The moment they crossed, Feyre felt the weight of magic pressing on her. She was trapped in Prythian, and there was no escaping.");
             feyre.addkarma();
             tamlin.addAnger();
-                    System.out.println(stats);
+            printStats(feyre, tamlin);
 
         }
         System.out.println(GREEN + "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET);
         System.out.println("Final Trial: Feyre's Choices");
-        System.out.println("After Feyre is taken to the mystical lands of the Fae, she finds herself in the grand, yet eerie, estate of Tamlin, a powerful High Fae lord. Her arrival is filled with tension, as Tamlin’s true nature remains shrouded in mystery. As Feyre navigates their uneasy interactions, \n" +
-                "the choices she makes will determine whether Tamlin remains the feared, cursed beast trapped in his monstrous form—or if he becomes the noble, compassionate future she never expected. Will she earn his trust and find love, or will his darkness consume her? \n" +
+        System.out.println("After Feyre is taken to the mystical lands of the Fae, she finds herself in the grand, yet eerie, estate of Tamlin, a powerful High Fae lord. Her arrival is filled with tension, " +
+                "\nas Tamlin’s true nature remains shrouded in mystery. As Feyre navigates their uneasy interactions, \n" +
+                "the choices she makes will determine whether Tamlin remains the feared, cursed beast trapped in his monstrous form—or if he becomes the noble, compassionate future she never expected." +
+                "\nWill she earn his trust and find love, or will his darkness consume her? \n" +
                 "The path she chooses will shape her fate and the future of their entwined worlds.");
         System.out.println(GREEN + "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET);
 
@@ -260,14 +271,15 @@ public class Main {
                 "She was greeted by a faerie named Alice, who informed her that she had been the one who had dressed her, and that Sir Tamlin had prepared supper downstairs.\n" +
                 "Hungry, she decided to go downstairs just to find Tamlin sitting in silence, waiting for her.\n" +
                 "Option 1: Approach Tamlin with caution\n" +
-                "Option 2: Challenge Tamlin immediately");
+                "Option 2: Challenge Tamlin immediately" +
+                "\nINPUT 1 or 2");
         String choiceOne = trialFourQuest.nextLine();
         int choice = Integer.parseInt(choiceOne);
 
         if(choice==1){
             System.out.println("Tamlin is cold and distant, but she notices a flicker of sadness behind his eyes. He doesn’t open up, but she earned his respect by not rushing him. Their relationship remains neutral.");
             feyre.addkarma();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
 
         }
         else{
@@ -275,14 +287,15 @@ public class Main {
             tamlin.addAnger();
             feyre.minuskarma();
             tamlin.addLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
         }
 
         System.out.println("Choice 2: The Dinner Invitation\n" +
                 "Tamlin asks Feyre to sit down and eat. In the back of her mind, she remembers that faerie food can not be consumed by humans. However, hunger consumes her. She decides to sit.\n" +
                 "He says nothing, and simply stares at her. Who is this man.. and why has the food not poisoned her? Is he.. good? Curiosity gets the best of her, and it is up to you to decide what her next step is.\n" +
                 "Choice 1: Say thank you and ask about his past\n" +
-                "Choice 2: Stop eating and keep your distance");
+                "Choice 2: Stop eating and keep your distance" +
+                "\nINPUT 1 or 2");
         String choice2 = trialFourQuest.nextLine();
         int choicetwo = Integer.parseInt(choice2);
 
@@ -292,14 +305,15 @@ public class Main {
                     "The more he speaks, the more she understand the sadness behind his anger. Their bond begins to form, and you earn his trust.");
             feyre.addkarma();
             tamlin.addLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
         }
 
         System.out.println("Choice 3: The Curse\n" +
                 "She learns more about Tamlin’s curse: he was once a kind and honorable lord, but a dark spell has transformed him into a monstrous form. Breaking the curse is not just about magic—it’s about trust, sacrifice, and emotional connection. \n" +
                 "As you get closer to Tamlin, you’re presented with the option to help him lift the curse.\n" +
-                "Option 1:  Offer to help break the curse, even if it means risking yourself." +
-                "Option 2: Reject the idea of helping, wanting to keep your distance from the curse.");
+                "Option 1:  Offer to help break the curse, even if it means risking yourself.\n" +
+                "Option 2: Reject the idea of helping, wanting to keep your distance from the curse." +
+                "\nINPUT 1 or 2");
         String choice3 = trialFourQuest.nextLine();
         int choicethree = Integer.parseInt(choice3);
 
@@ -308,7 +322,7 @@ public class Main {
                     "He begins to trust her more deeply, and the possibility of love between them feels more attainable. However, this path comes with great risk, and both must face the trials ahead.");
             feyre.addkarma();
             tamlin.addLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
 
         }
         else{
@@ -317,14 +331,15 @@ public class Main {
             feyre.minuskarma();
             tamlin.addAnger();
             tamlin.minusLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
         }
 
         System.out.println("Choice 4: Trusting Tamlin\n" +
                 "As time passes, Feyre begins to see the layers beneath Tamlin’s monstrous form. The curse has made him wary, but there are moments of vulnerability that break through the hardness of his facade. She must decide whether to open up to him, sharing her own past, \n" +
                 "or whether to keep her walls firmly in place.\n" +
                 "Choice 1: Confide in Tamlin about her struggles\n" +
-                "Choice 2: Keep your distance, maintaining your guard");
+                "Choice 2: Keep your distance, maintaining your guard" +
+                "\nINPUT 1 or 2");
         String choice4 = trialFourQuest.nextLine();
         int choicefour = Integer.parseInt(choice4);
 
@@ -334,7 +349,7 @@ public class Main {
                     "His feelings for her deepen, and the possibility of a future together becomes more real. Feyre’s decision to open up creates a connection that strengthens their bond and gives Tamlin hope for the future.");
             feyre.addkarma();
             tamlin.addLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
         }
 
         else{
@@ -343,13 +358,14 @@ public class Main {
             feyre.minuskarma();
             tamlin.addAnger();
             tamlin.minusLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
         }
         System.out.println("Choice 5: A Dangerous Encounter\n" +
                 "A sudden, dangerous event tests the limits of Feyre’s growing bond with Tamlin. Whether it’s an attack by an enemy or an explosion of Tamlin’s cursed power, Feyre must decide how to respond. This moment will reveal how much she truly trusts Tamlin—\n" +
                 "and whether she’s willing to risk everything for him.\n" +
                 "Choice 1: Stand by Tamlin, despite the danger\n" +
-                "Choice 2: Run from the danger, choose self-preservation");
+                "Choice 2: Run from the danger, choose self-preservation" +
+                "\nINPUT 1 or 2");
         String choice5 = trialFourQuest.nextLine();
         int choicefive = Integer.parseInt(choice5);
 
@@ -359,7 +375,7 @@ public class Main {
                     "strengthening their bond and increasing the chance of breaking the curse. Together, they are more than just a prince and a captive—they are partners in the fight for their future.");
             feyre.addkarma();
             tamlin.addLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
         }
 
         else{
@@ -368,13 +384,14 @@ public class Main {
             feyre.minuskarma();
             tamlin.addAnger();
             tamlin.minusLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
         }
 
         System.out.println("Choice 6: The Final Test\n" +
                 "The curse can finally be broken, but it will require a great sacrifice. Tamlin’s fate is in Feyre’s hands. This is the moment where all of her choices culminate. Will she take the risk to save him, or will she walk away?\n" +
                 "Choice 1: Risk everything to break his curse, even at great personal cost\n" +
-                "Choice 2: Let Tamlin face his fate alone, unwilling to risk your life");
+                "Choice 2: Let Tamlin face his fate alone, unwilling to risk your life" +
+                "\nINPUT 1 or 2");
         String choice6 = trialFourQuest.nextLine();
         int choicesix = Integer.parseInt(choice6);
 
@@ -384,7 +401,7 @@ public class Main {
                     "Their bond is deeper than before, but the path ahead is uncertain, and both must confront the consequences of this choice.");
             feyre.addkarma();
             tamlin.addLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
         }
 
         else{
@@ -393,12 +410,12 @@ public class Main {
             feyre.minuskarma();
             tamlin.addAnger();
             tamlin.minusLove();
-            System.out.println(stats);
+            printStats(feyre, tamlin);
         }
 
         System.out.println(GREEN + "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET);
         System.out.println("We've made it all this way, congrats! Now lets look at your stats.");
-        System.out.println(stats);
+        printStats(feyre, tamlin);
 
 
         if (tamlin.getAnger()>6){
@@ -407,10 +424,28 @@ public class Main {
                     " As the curse lingers, so does the distance between them. As the curse continues to bind Tamlin, he becomes more withdrawn and cold. He no longer seeks her presence, and when they do speak, his tone is distant, as though the warmth they once shared has disappeared.\n" +
                     "Feyre lives on till the age of 40, suffering a death that could've been avoided had Tamlin loved her enough to save her.");
         }
-        else{
-            System.out.println("");
+        else if (feyre.getKarma()>3&&tamlin.getLove()>3){
+            System.out.println( "Things are looking up for Feyre and Tamlin! It seems like they've found a way to navigate their challenges together.\n" + GREEN +
+                    "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET +
+                    "\nYour Ending: Feyre and Tamlin have faced their struggles, but their bond has endured. Despite their differences and the weight of the curse, Feyre's actions and Tamlin's unwavering love have paved a way for healing.\n" +
+                    "Tamlin begins to open up again, trusting Feyre as they work toward breaking the curse together. Feyre, now more understanding and compassionate, finds a way to forgive herself and Tamlin for their past mistakes. " +
+                    "\nTheir relationship evolves into one of mutual support, where they no longer need to be perfect, only present and true to each other.\n" +
+                    "Together, they manage to break the curse, and Feyre lives a full and joyful life by Tamlin's side, growing old together with love and understanding until the end of her days.");
+        }
+        else {
+            System.out.println("Wait a second, how did *this* happen? This doesn't even make sense!\n" + GREEN +
+                    "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET +
+                    "\nYour Ending: Somehow, despite making questionable decisions along the way and Tamlin's feelings being... well, lukewarm at best, Feyre and Tamlin end up in a strange place.\n" +
+                    "Instead of growing closer, their relationship remains strained. There are moments where they seem to understand each other, but those moments are fleeting, overshadowed by miscommunications and mistrust.\n" +
+                    "The curse? Still there. Their love? It's there too, but more like an obligation than a burning passion. Feyre spends her days wondering how things could have gone differently, and Tamlin grows increasingly distant, unsure of how to fix what's broken.\n" +
+                    "In the end, they both drift apart. Feyre lives a solitary life, haunted by the 'what-ifs,' while Tamlin... well, he's still taming his own anger, somewhere in the shadows. They were never really *meant* to be, were they?\n" +
+                    "\nSo, seriously, how did *you* manage to get this ending? Do you think you're some kind of relationship guru, guiding them through their mistakes? I mean, what’s your secret, because this is... something.\n");
+
+            System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+            System.out.println("But hey, if you think this is a unique, one-of-a-kind outcome... you're right. CONGRATS Mr/Mrs. Different!");
         }
 
+    }
 
 
 
@@ -419,8 +454,17 @@ public class Main {
 
 
 
+    public static void printStats(Feyre feyre, Tamlin tamlin) {
+        String RESET = "\u001B[0m";
+        String GREEN = "\u001B[32m";
+        String stats = (GREEN +   "_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n" + RESET +
+                "Feyre\n\uD83D\uDC4D Karma: "+ feyre.getKarma()+"\n\n"+ GREEN+ "_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n"
+                + RESET + "Tamlin\n\uD83D\uDD25 Anger: " + tamlin.getAnger()+"\n\uD83E\uDEC0 Love: "+tamlin.getLove()+ GREEN+  "\n\n_________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n" + RESET);
+        System.out.println(stats);
+    }
 
 
 
     }
-}
+
+

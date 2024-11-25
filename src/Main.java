@@ -74,7 +74,7 @@ public class Main {
         }
 
         if(trials.trialOne()){
-            feyre.addkarma();
+            feyre.addKarma();
             printStats(feyre, tamlin);
             System.out.println("\nShe fired the ash arrow before it destroyed much else of the deer. The arrow found its mark in it's side, and she could have sworn the ground itself shuddered.\n\n" +
                     "It barked in pain, releasing the doe’s neck as it's blood sprayed on the snow—so ruby bright. It whirled towards her, those yellow eyes wide, hackles raised.\n\n" +
@@ -86,7 +86,7 @@ public class Main {
         }
         else{
 
-            feyre.minuskarma();
+            feyre.minusKarma();
             printStats(feyre, tamlin);
             System.out.println("She fired the ash arrow before it destroyed much else of the deer. The arrow grazed it's ears, dealing no damage and directing it's attention to her.\n\n" +
                     "The deer ran off quickly, leaving nothing but her and that...wolf. It's yellow eyes pierced through her as she grabbed her bow,\n\n" +
@@ -122,7 +122,7 @@ public class Main {
         printStats(feyre, tamlin);
 
         System.out.println(GREEN+ "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET);
-        System.out.println("You must leave the future to fate.\n Will you go with the beast? Or will you be banished to the Faerie land of Prythian?");
+        System.out.println("You must leave the future to fate.\nWill you go with the beast? Or will you be banished to the Faerie land of Prythian?");
         Scanner trialTwoQuest = new Scanner(System.in);
         System.out.println("Choose any number that will determine your fate");
         String num = trialTwoQuest.nextLine();
@@ -132,7 +132,7 @@ public class Main {
         int trialTew = trials.trialTwo(number,emo);
         //Greater than 0 means YES!!!!!!! SHE LIVES!!!
         if(trialTew>=0){
-            feyre.addkarma();
+            feyre.addKarma();
             tamlin.addLove();
             printStats(feyre, tamlin);
             System.out.println("Feyre loosened her grip on the dagger and stared into the green eyes before asking, “When do we go?” She could smell her doom on his breath as he replied, “Now.”\n" +
@@ -154,14 +154,14 @@ public class Main {
                     "“Go somewhere new,” her father whispered, shaking her by the shoulders. “Make a name for yourself.”");
         }
         else{
-            feyre.addkarma();
+            feyre.addKarma();
             tamlin.addLove();
             tamlin.addLove();
             printStats(feyre, tamlin);
             System.out.println("Feyre loosened her grip on the dagger, her voice steady despite the fear. “I’d rather die than go with you.”\n" +
                     "\n" +
-                    "The faerie’s eyes darkened, but he didn’t move to strike. Instead, he watched  her for a long moment, something unspoken passing between them." +
-                    "\nHe understood her defiance—he understood why she’d rather die than submit. But he wouldn’t let her die." +
+                    "The faerie’s eyes darkened, but he didn’t move to strike. Instead, he watched  her for a long moment, something unspoken passing between them.\n" +
+                    "\nHe understood her defiance—he understood why she’d rather die than submit. But he wouldn’t let her die.\n" +
                     "\n" +
                     "“So be it,” he said, his voice low. He stepped forward, his hand locking onto her arm with unyielding strength. Feyre tried to pull away, but his grip was like iron.\n" +
                     "\n" +
@@ -180,10 +180,12 @@ public class Main {
         System.out.println("TRIAL THREE: FEYRE'S JOURNEY");
         System.out.println("Okay, okay... I know you're sick and tired of the reading. What's with this new gen and their short attention span? Have people even read *The Feminine Mystique*??\n" +
                 "(The narrator has never read a book. He is a program. He just has a superiority complex.)\n\n" +
-                "\"My name... is Tamlin,\" the beast grunts.\n" +
-                "Feyre doesn't respond. Why would she care what her captor's name is?\n" +
-                "\"If you think I'm a monster, I'm not. Even you know I can't bypass the treaty. A life for a life.\"\n" +
-                "\"What treaty?\" she whispers.\n" +
+                GREEN+ "_________________________________________________________________________________________________________________________________________________________________________________________________________________________" + RESET +
+
+        "\"My name... is Tamlin,\" the beast grunts.\n\n" +
+                "Feyre doesn't respond. Why would she care what her captor's name is?\n\n" +
+                "\"If you think I'm a monster, I'm not. Even you know I can't bypass the treaty. A life for a life.\"\n\n" +
+                "\"What treaty?\" she whispers.\n\n" +
                 "\"You're too young to remember.\"\n\n" +
                 "\"Oh yeah? And how old are you?\"\n\n" +
                 "\"Over 500 years old,\"\n\n" +
@@ -198,10 +200,10 @@ public class Main {
 
 
         Scanner trialThreeQuest = new Scanner(System.in);
-        System.out.println("Choose which direction you want to go in: Input n for north, s for south, e for east, and w for west");
+        System.out.println("Input which direction you want to go in: Input n for north, s for south, e for east, and w for west");
         String direction = trialThreeQuest.nextLine();
         while (!direction.equals("n") && !direction.equals("s") && !direction.equals("e") && !direction.equals("w")){
-            System.out.println("Choose which direction you want to go in: Input n for north, s for south, e for east, and w for west");
+            System.out.println("Input which direction you want to go in: Input n for north, s for south, e for east, and w for west");
             direction = trialThreeQuest.nextLine();
 
         }
@@ -215,7 +217,7 @@ public class Main {
                     "\nHe lunged forward, faster than she could run, and within seconds, he was back on the path to the border.\n" +
                     "\n" +
                     "The world blurred as the magic pulled at her, and the Beast crossed the line effortlessly. Feyre’s heart sank. She was in Prythian now, her brief attempt at freedom crushed.");
-                     feyre.addkarma();
+                     feyre.addKarma();
                      tamlin.addAnger();
             printStats(feyre, tamlin);
         }
@@ -228,7 +230,7 @@ public class Main {
                     "\nThe moment her hands slipped from his fur, she was pulled back onto his back with ease. The Beast surged forward again, crossing the border as if nothing had happened." +
                     "\n" +
                     "Feyre’s chest tightened as she realized it was over. She had failed to escape, and the border of Prythian stretched out before her.");
-            feyre.addkarma();
+            feyre.addKarma();
             tamlin.addAnger();
             printStats(feyre, tamlin);
         }
@@ -239,7 +241,7 @@ public class Main {
                     "\nshe was back on his back, his claws digging into her. She struggled beneath him, her mind racing with the knowledge that she couldn’t outrun him. The village—her last hope—was slipping farther away as the Beast pushed forward.\n" +
                     "\n" +
                     "No matter how hard she fought, the border was ahead, and Feyre found herself crossing it with the Beast, unable to stop it. Her stomach turned as she realized it was hopeless. Prythian was now her fate.");
-            feyre.addkarma();
+            feyre.addKarma();
             tamlin.addAnger();
             printStats(feyre, tamlin);
 
@@ -251,7 +253,7 @@ public class Main {
                     "\nand before she could even recover, the Beast was already surging forward again, moving past the trees and towards the border." +
                     "\n" +
                     "The moment they crossed, Feyre felt the weight of magic pressing on her. She was trapped in Prythian, and there was no escaping.");
-            feyre.addkarma();
+            feyre.addKarma();
             tamlin.addAnger();
             printStats(feyre, tamlin);
 
@@ -278,15 +280,16 @@ public class Main {
 
         if(choice==1){
             System.out.println("Tamlin is cold and distant, but she notices a flicker of sadness behind his eyes. He doesn’t open up, but she earned his respect by not rushing him. Their relationship remains neutral.");
-            feyre.addkarma();
+            feyre.addKarma();
             printStats(feyre, tamlin);
 
         }
         else{
             System.out.println(" Tamlin’s temper flares. He grows defensive and sarcastic, testing her resolve. She's made him wary of her, but he secretly admires her boldness. The tension between them deepens.");
             tamlin.addAnger();
-            feyre.minuskarma();
+            feyre.minusKarma();
             tamlin.addLove();
+            tamlin.minusAnger();
             printStats(feyre, tamlin);
         }
 
@@ -303,7 +306,7 @@ public class Main {
             System.out.println("Tamlin reluctantly opens up and the pain he’s endured as a High Lord of Prythian. He reveals that he is cursed and can no longer use his\n" +
                     "powers at will due to a tyrant in Prythian. She learns that he isn't the monster she perceived him to be. \n" +
                     "The more he speaks, the more she understand the sadness behind his anger. Their bond begins to form, and you earn his trust.");
-            feyre.addkarma();
+            feyre.addKarma();
             tamlin.addLove();
             printStats(feyre, tamlin);
         }
@@ -320,7 +323,7 @@ public class Main {
         if (choicethree==1){
             System.out.println("Tamlin is overwhelmed by Feyre’s willingness to risk everything for him. Her selflessness cuts through the walls of bitterness he’s built around his heart. Her decision to help him, despite the dangers, sparks a shift in Tamlin’s demeanor. \n" +
                     "He begins to trust her more deeply, and the possibility of love between them feels more attainable. However, this path comes with great risk, and both must face the trials ahead.");
-            feyre.addkarma();
+            feyre.addKarma();
             tamlin.addLove();
             printStats(feyre, tamlin);
 
@@ -328,7 +331,7 @@ public class Main {
         else{
             System.out.println("Tamlin feels a deep sense of disappointment and rejection. He thought that Feyre might be the one person who could understand and help him. Instead, her refusal drives him further into despair, and his dark side becomes more prominent. \n" +
                     "The emotional gulf between them widens, and Feyre starts to see just how deep Tamlin’s pain truly runs.");
-            feyre.minuskarma();
+            feyre.minusKarma();
             tamlin.addAnger();
             tamlin.minusLove();
             printStats(feyre, tamlin);
@@ -347,7 +350,7 @@ public class Main {
 
             System.out.println("Tamlin is moved by Feyre’s openness and vulnerability. In sharing her pain, she allows him to see her as more than just a captive. The emotional walls between them begin to crumble, and Tamlin begins to trust her more fully. \n" +
                     "His feelings for her deepen, and the possibility of a future together becomes more real. Feyre’s decision to open up creates a connection that strengthens their bond and gives Tamlin hope for the future.");
-            feyre.addkarma();
+            feyre.addKarma();
             tamlin.addLove();
             printStats(feyre, tamlin);
         }
@@ -355,7 +358,7 @@ public class Main {
         else{
             System.out.println("Tamlin grows frustrated with Feyre’s inability to trust him. He sees her silence as a refusal to truly engage with him, and it pushes him further into his isolation. The emotional distance between them increases, and his darker tendencies begin to resurface. \n" +
                     "Feyre’s reluctance to connect has made it harder for them to move forward, and Tamlin becomes more distant and unpredictable.");
-            feyre.minuskarma();
+            feyre.minusKarma();
             tamlin.addAnger();
             tamlin.minusLove();
             printStats(feyre, tamlin);
@@ -373,7 +376,7 @@ public class Main {
 
             System.out.println("Feyre’s decision to stand with Tamlin, even in the face of danger, proves her loyalty. Tamlin is moved by her courage and begins to see her as someone who is truly on his side, no matter the cost. This act of bravery draws them closer, \n" +
                     "strengthening their bond and increasing the chance of breaking the curse. Together, they are more than just a prince and a captive—they are partners in the fight for their future.");
-            feyre.addkarma();
+            feyre.addKarma();
             tamlin.addLove();
             printStats(feyre, tamlin);
         }
@@ -381,7 +384,7 @@ public class Main {
         else{
             System.out.println("Tamlin’s anger erupts as he sees Feyre flee in his moment of need. He feels betrayed, and the trust between them crumbles. The darkness in him surges, and his beastly nature becomes more dominant. \n" +
                     "Feyre’s choice pushes him further into despair, and her relationship with him becomes even more fragile. She must decide if it’s worth trying to mend the rift, or if it’s too late.");
-            feyre.minuskarma();
+            feyre.minusKarma();
             tamlin.addAnger();
             tamlin.minusLove();
             printStats(feyre, tamlin);
@@ -399,7 +402,7 @@ public class Main {
 
             System.out.println("Feyre chooses to risk everything, and the curse begins to unravel. Tamlin’s form shifts, but the full impact of her decision isn’t clear. While there’s hope for him, they now face new challenges—emotionally and magically. \n" +
                     "Their bond is deeper than before, but the path ahead is uncertain, and both must confront the consequences of this choice.");
-            feyre.addkarma();
+            feyre.addKarma();
             tamlin.addLove();
             printStats(feyre, tamlin);
         }
@@ -407,7 +410,7 @@ public class Main {
         else{
             System.out.println("Feyre steps back, unsure if she’s ready to risk herself. Tamlin retreats into his monstrous form, but the curse isn’t fully broken. There’s still a chance to help him, but trust has been damaged. \n" +
                     "Feyre now faces the choice of whether to try again, or accept the consequences of her hesitation.");
-            feyre.minuskarma();
+            feyre.minusKarma();
             tamlin.addAnger();
             tamlin.minusLove();
             printStats(feyre, tamlin);

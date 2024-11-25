@@ -450,11 +450,12 @@ public class Main {
 
     }
 
-
-
-
-
-
+    /**
+     * printStats method for the runner class. It prints out the updated stats when called.
+     *
+     * @param feyre calls to the feyre instance variable.
+     * @param tamlin calls to the tamlin instance variable.
+     */
 
 
     public static void printStats(Feyre feyre, Tamlin tamlin) {

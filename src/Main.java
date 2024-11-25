@@ -1,6 +1,5 @@
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
-import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,7 +40,7 @@ public class Main {
         System.out.println("How many fingers are there on an average person's hand?");
         String answer = trialOneQuest.nextLine();
 
-        if (answer.equals("5")||answer.equals("five")||answer.equals("Five")) {
+        if (answer.equals("5")||answer.equalsIgnoreCase("five")) {
             trials.addScore(2);
         }
         else{
@@ -50,7 +49,7 @@ public class Main {
         System.out.println("What is the largest continent?");
         String answer2 = trialOneQuest.nextLine();
 
-        if (answer2.equals("Asia")||answer2.equals("asia")) {
+        if (answer2.equalsIgnoreCase("Asia")) {
             trials.addScore(2);
         }
         else{
@@ -58,7 +57,7 @@ public class Main {
         }
         System.out.println("Does Feyre love her family? (Trick Question)");
         String answer3 = trialOneQuest.nextLine();
-        if (answer2.equals("yes")||answer2.equals("Yes")) {
+        if (answer2.equalsIgnoreCase("yes")) {
             trials.addScore(2);
         }
         else{
@@ -66,7 +65,7 @@ public class Main {
         }
         System.out.println("Is the wolf a faerie...? (Trick Question)");
         String answer4 = trialOneQuest.nextLine();
-        if (answer2.equals("yes")||answer2.equals("Yes")) {
+        if (answer2.equalsIgnoreCase("yes")) {
             trials.addScore(2);
         }
         else{

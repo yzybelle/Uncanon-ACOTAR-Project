@@ -45,6 +45,8 @@ public class Trials
      }
 
      /**
+      * trialTwo method determines whether the number the user inputted x added to itself the length of
+      * the string y is greater than the sum of two integers randomly chosen between 1 and 21.
       *
       * @param x represents the number the user will input for trial two.
       * @param y represents the string the user will input that corresponds
